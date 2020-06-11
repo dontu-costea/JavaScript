@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Windows calculator</title>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="calculator">
+		<form name="calculator">
+			<input type="text" name="answer" class="textview" readonly="readonly">
+		</form>
+		<table>
+			<tr>
+				<td><input type="button" value="7" class="button" onclick="calculator.answer.value += 7 "></td>
+				<td><input type="button" value="8" class="button" onclick="calculator.answer.value += 8 "></td>
+				<td><input type="button" value="9" class="button" onclick="calculator.answer.value += 9 "></td>
+				<td><input type="button" value="C" class="button" id="clear" onclick="calculator.answer.value = '' "></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" class="button" onclick="calculator.answer.value += 4 "></td>
+				<td><input type="button" value="5" class="button" onclick="calculator.answer.value += 5 "></td>
+				<td><input type="button" value="6" class="button" onclick="calculator.answer.value += 6 "></td>
+				<td><input type="button" value="*" class="button" onclick="calculator.answer.value += '*' "></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="1" class="button" onclick="calculator.answer.value += 1 "></td>
+				<td><input type="button" value="2" class="button" onclick="calculator.answer.value += 2 "></td>
+				<td><input type="button" value="3" class="button" onclick="calculator.answer.value += 3 "></td>
+				<td><input type="button" value="/" class="button" onclick="calculator.answer.value += '/' "></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="." class="button" onclick="calculator.answer.value += '.' "></td>
+				<td><input type="button" value="0" class="button" onclick="calculator.answer.value += 0	 "></td>
+				<td><input type="button" value="-" class="button" onclick="calculator.answer.value += '-' "></td>
+				<td><input type="button" value="+" class="button" onclick="calculator.answer.value += '+' "></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="=" class="button" id="equal" onclick="calculator.answer.value = eval(calculator.answer.value) "></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
